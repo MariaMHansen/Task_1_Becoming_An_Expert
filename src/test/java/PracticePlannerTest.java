@@ -4,6 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * This class is for testing your code locally
+ * -DO-NOT-MODIFY-THIS-CLASS-
+ * It can cause problems with local testing and handing the task in
+ * If you have accidentally modified the content reclone the repository and start from scratch (see student guide)
+ * Do not try to cheat by editing local tests, remote IO tests are applied for grading.
+ */
 class PracticePlannerTest {
     PracticePlannerTest() {
     }
