@@ -15,10 +15,11 @@ class PracticePlannerTest {
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: minuteToHourConverter\n" +
                     " Try to convert the minutes to a double data type\n" +
-                    "          before the division look at an example in the\n"+
-                    "          \"Introduction to Java Programming and Data Structures book\"\n" +
-                    "          chapter 2.15 Numeric Type Conversions\n" +
+                    " before the division look at an example in the\n"+
+                    " \"Introduction to Java Programming and Data Structures book\"\n" +
+                    " chapter 2.15 Numeric Type Conversions\n" +
                     "-------------------------------------------------------------------------\n"
             );
         }
@@ -35,6 +36,7 @@ class PracticePlannerTest {
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
                     " You can also find an example in the book \n"+
@@ -48,6 +50,7 @@ class PracticePlannerTest {
             fail(   "\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You are almost done, but \n" +
                     " You need to round up the result to two decimals, not one\n" +
                     "-------------------------------------------------------------------------\n"
@@ -64,6 +67,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: yearsBeforeMasteryCalculator\n" +
                     " You need to round up the result to a whole integer\n" +
                     " Check the task description again, and try the Math.round() method\n" +
                     "-------------------------------------------------------------------------\n"
@@ -74,6 +78,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: yearsBeforeMasteryCalculator\n" +
                     " It looks like your method is rounding values like 1.3 up to 2\n" +
                     " According to the task, they need to be rounded down to 1 \n" +
                     " Try to do the calculations in double type values first, \n" +
@@ -97,6 +102,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: hoursOfPracticePerDayCalculator\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
                     "-------------------------------------------------------------------------\n"
@@ -113,8 +119,10 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
+                    " METHOD: practiceTimeCalculator\n" +
                     " There is probably a mistake in variable type conversion\n" +
-                    " Try to \n" +
+                    " Try to do the calculations using long variable type and cast to double \n" +
+                    " during the last division from minutes to hours. Remember to round up after. \n" +
                     "-------------------------------------------------------------------------\n"
             );
         }
