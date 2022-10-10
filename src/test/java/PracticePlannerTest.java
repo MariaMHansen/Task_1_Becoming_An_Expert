@@ -38,9 +38,12 @@ class PracticePlannerTest {
                     "-------------------------------------------------------------------------\n" +
                     "AUTO-FEEDBACK:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
-                    " Try to convert the values to a double data type\n" +
-                    " before the division look at an example in the\n" +
-                    " \"Introduction to Java Programming and Data Structures book\"\n" +
+                    " Looks like you got a zero because of a wrong conversion \n" +
+                    " between an integer and a double. To get the correct result \n" +
+                    " tou need to convert minutes to a double. \n" +
+                    " You can do it using casting or you can divide by a double 60.0\n" +
+                    " You can find an example in the book\n" +
+                    " \"Introduction to Java Programming and Data Structures\"\n" +
                     " chapter 2.15 Numeric Type Conversions\n" +
                     "-------------------------------------------------------------------------\n"
             );
