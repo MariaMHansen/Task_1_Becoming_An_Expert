@@ -50,11 +50,11 @@ public class PracticePlanner {
 
     /**
      * STEP 2:
-     * Make a method that calculates how many hours you practise year (365 days)
-     * Do not substract hollidays and weekends, we are making a rough estimate
-     * Input whole number amount of minutes, output decimal number amount of hours
-     * Please round up your answer to two decimal places.
-     * Just like in general math, in case like 1.5 the method should round up to 1.6
+     * Make a method that calculates how many programming hours you can gain in a year (365 days)
+     * If you practise a given amount of minutes per day.
+     * (Do not substract hollidays and weekends, this is a rough estimate)
+     * Please, round up your answer to two decimal places.
+     * Just like in general math, 1.5 needs to be rounded up to 2, 1.3 needs to be rounded down to 1
      * Example: if we input 60 minutes the method returns 365.00 hours a year
      * @param minutes whole number of minutes
      * @return hours decimal number
@@ -70,11 +70,10 @@ public class PracticePlanner {
     }
     /**
      * STEP 3:
-     * Make a method that calculates how many years you need to get 10000 hours
-     * of practise, while practising the amount of minutes you chose per day
+     * Make a method that calculates how many years you need to get to 10000 hours
+     * of practise, while practising the amount of minutes you choose per day
      * For example how many years does it take to get to 10000 hours by practising 45 minutes a day?
-     * Please provide the answer as a whole number rounded up
-     * 1.5 needs to be rounded up to 2, 1.3 needs to be rounded down to 1
+     * Please, provide the answer as a whole number rounded up to two 2 decimals
      * Example: If we input practising time 45 minutes the method returns 37 years
      * @param minutes whole number of minutes
      * @return years whole number of years
@@ -92,7 +91,7 @@ public class PracticePlanner {
      * STEP 4:
      *      Write a method that calculates:
      *      How many hours a day must you practise to become an expert in 20 years?
-     *      We assume all years are 365 days.
+     *      We assume that all years have 365 days.
      *      Please, round up the result to 2 decimal places.
      *      Example: Running the method returns the answer in hours.
      * @return years decimal number
@@ -114,10 +113,10 @@ public class PracticePlanner {
      *      The answer must be converted from milliseconds to hours with 2 decimal places.
      *      For the sake of simplicity, use: 1665378185977 as your start training time
      *      Use System.currentTimeMillis() for your task finish time
-     *      Example: Running the method returns 323 minutes
+     *      Example: Running the method returns 300.25 hours
      *      Tip! System.currentTimeMillis() method returns system time in milliseconds,
      *           Be careful about choosing your variable data type.
-     * @return years decimal number
+     * @return hours decimal number
      * Points: 2
      * New skills: dealing with long numbers
      * Difficulty: 4

@@ -36,7 +36,7 @@ class PracticePlannerTest {
         if (PracticePlanner.minuteToHourConverter(1) == 0.0) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " Looks like you got a zero because of a wrong conversion \n" +
                     " between an integer and a double. To get the correct result \n" +
@@ -52,7 +52,7 @@ class PracticePlannerTest {
         if (PracticePlanner.minutePerDayToHoursPerYearConverter(55) == 334.5833333333333) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
@@ -66,7 +66,7 @@ class PracticePlannerTest {
         if (PracticePlanner.minutePerDayToHoursPerYearConverter(55) == 334.6) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You are almost done, but \n" +
                     " You need to round up the result to two decimals, not one\n" +
@@ -83,7 +83,7 @@ class PracticePlannerTest {
         if (PracticePlanner.yearsBeforeMasteryCalculator(45) == 36.529680365296805) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: yearsBeforeMasteryCalculator\n" +
                     " You need to round up the result to a whole integer\n" +
                     " Check the task description again, and try the Math.round() method\n" +
@@ -94,7 +94,7 @@ class PracticePlannerTest {
         if (PracticePlanner.yearsBeforeMasteryCalculator(13) == 127) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: yearsBeforeMasteryCalculator\n" +
                     " It looks like your method is rounding values like 1.3 up to 2\n" +
                     " According to the task, they need to be rounded down to 1 \n" +
@@ -110,7 +110,7 @@ class PracticePlannerTest {
         if (PracticePlanner.yearsBeforeMasteryCalculator(45) != 37) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: yearsBeforeMasteryCalculator\n" +
                     " There is probably a mistake in type conversions\n" +
                     " Try to do the calculations in double type values first, \n" +
@@ -133,7 +133,7 @@ class PracticePlannerTest {
         if (PracticePlanner.hoursOfPracticePerDayCalculator() == 1.36986301369863) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: hoursOfPracticePerDayCalculator\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
@@ -162,7 +162,7 @@ class PracticePlannerTest {
         if (PracticePlanner.practiceTimeCalculator() == 0.0) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: practiceTimeCalculator\n" +
                     " There is probably a mistake in variable type conversion\n" +
                     " Try to do the calculations using long variable type and cast to double \n" +
@@ -176,7 +176,7 @@ class PracticePlannerTest {
         if (PracticePlanner.practiceTimeCalculator() != expected) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
-                    "AUTO-FEEDBACK:\n" +
+                    " AUTO-FEEDBACK:\n" +
                     " METHOD: practiceTimeCalculatorTest\n" +
                     " Make sure you make all your calculations using long data type\n" +
                     " Only during the last division from minutes to hours use double\n" +
