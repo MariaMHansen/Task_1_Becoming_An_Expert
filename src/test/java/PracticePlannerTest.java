@@ -105,4 +105,21 @@ class PracticePlannerTest {
         Assertions.assertEquals( 1.37, PracticePlanner.hoursOfPracticePerDayCalculator());
     }
 
+    @DisplayName("Checks if practiceTimeCalculator returns hours from a fixed point in time to now")
+    @Test
+    void practiceTimeCalculatorTest() {
+        // Test that checks if the students only rounded up to one decimal
+        if(PracticePlanner.practiceTimeCalculator()==0.0){
+            fail("\n" +
+                    "-------------------------------------------------------------------------\n" +
+                    "AUTO-FEEDBACK:\n" +
+                    " There is probably a mistake in variable type conversion\n" +
+                    " Try to \n" +
+                    "-------------------------------------------------------------------------\n"
+            );
+        }
+        double expected = Math.round(((double)((System.currentTimeMillis()-1665378185977L)/1000/60)/60)*100.0)/100.0;
+        Assertions.assertEquals( expected, PracticePlanner.practiceTimeCalculator());
+    }
+
 }

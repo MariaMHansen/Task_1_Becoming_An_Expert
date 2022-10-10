@@ -28,7 +28,7 @@ public class PracticePlanner {
         //System.out.println("MinutePerDayToHoursPerYearConverter: "+ minutePerDayToHoursPerYearConverter(45)+" hours per year");
         //System.out.println("YearsBeforeMasteryCalculator: "+yearsBeforeMasteryCalculator(45)+" years");
         //System.out.println("HoursOfPracticePerDayCalculator: "+hoursOfPracticePerDayCalculator()+" hours");
-        //System.out.println("PracticeTimeCalculator: "+practiceTimeCalculator()+" minutes");
+        //System.out.println("PracticeTimeCalculator: "+practiceTimeCalculator()+" hours");
     }
 
     /**
@@ -38,7 +38,7 @@ public class PracticePlanner {
      *     Example: If we input 15 minutes the method returns 0.25 hours
      * @param minutes  whole number of minutes
      * @return  decimal number of hours
-     * Points: 3
+     * Points: 2
      * New skills: operations with primitive types
      * Difficulty: 1
      */
@@ -58,7 +58,7 @@ public class PracticePlanner {
      * Example: if we input 60 minutes the method returns 365.00 hours a year
      * @param minutes whole number of minutes
      * @return hours decimal number
-     * Points: 3
+     * Points: 2
      * New skills: rounding up variables
      * Difficulty:2
      */
@@ -107,24 +107,23 @@ public class PracticePlanner {
         return 0.0;
     }
     /**
-     * Extra challenge :) No extra points
+     * Extra challenge :)
      * STEP 5:
      *      Make a method that calculates how much time has passed from
-     *      the time you started the task to the time you finish the task.
-     *      The answer must be converted from milliseconds to minutes with 2 decimal places.
-     *      Tip! To do this use two variables StartTime and FinishTime
-     *           timeSpent = currentTime - StartTime;
-     *      Example: Running the method returns 3.23 minutes
+     *      the time you start training to the time you finish the task.
+     *      The answer must be converted from milliseconds to hours with 2 decimal places.
+     *      For the sake of simplicity, use: 1665378185977 as your start training time
+     *      Use System.currentTimeMillis() for your task finish time
+     *      Example: Running the method returns 323 minutes
+     *      Tip! System.currentTimeMillis() method returns system time in milliseconds,
+     *           Be careful about choosing your variable data type.
      * @return years decimal number
-     * Points: 0
+     * Points: 2
      * New skills: dealing with long numbers
      * Difficulty: 4
      */
     public static double practiceTimeCalculator(){
-        // Uncomment this code to measure StartTime for this task, copy the output and save into a new variable.
-        // What type should it be?
-        // System.out.println("The task StartTime is: "+System.currentTimeMillis()+" milliseconds");
-        // Implement the code here ...
+        // Implement the code here ...;
 
         return 0.0;
     }
