@@ -1,7 +1,7 @@
 public class PracticePlanner {
     /*
        Welcome to your first programming assignment!
-       Even though you are i the beginning of your programming journey,
+       Even though you are in the beginning of your programming journey,
        if you put it time and effort you can become a real expert.
        Have you ever heard of the 10000 hour rule?
        ------------------------------------------------------------
@@ -13,7 +13,7 @@ public class PracticePlanner {
 
        In this exercise you will make a program to calculate
        how long it will take you to get 10000 hours of programming practise.
-       First thing you need to decide hoe long you want to practise per day.
+       First thing you need to decide how long you want to practise per day.
        Scroll down to in STEP 1:
        */
 
