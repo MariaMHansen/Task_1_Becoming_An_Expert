@@ -121,8 +121,7 @@ class PracticePlannerTest {
                     "AUTO-FEEDBACK:\n" +
                     " METHOD: practiceTimeCalculator\n" +
                     " There is probably a mistake in variable type conversion\n" +
-                    " Try to do the calculations using long variable type and cast to double \n" +
-                    " during the last division from minutes to hours. Remember to round up after. \n" +
+                    " Try to \n" +
                     "-------------------------------------------------------------------------\n"
             );
         }
