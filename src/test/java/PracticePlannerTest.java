@@ -10,12 +10,13 @@ class PracticePlannerTest {
 
     @DisplayName("Checks minuteToHourConverter converts 15 minutes to hours.")
     @Test
-    void minuteToHourConverterTest() throws Exception {
+    void minuteToHourConverterTest() {
         // Test that checks if the students remembered to convert minutes to double before division
         if (PracticePlanner.minuteToHourConverter(1) == 0.0) {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 1:\n" +
                     " METHOD: minuteToHourConverter\n" +
                     " Try to convert the minutes to a double data type\n" +
                     " before the division look at an example in the\n" +
@@ -37,6 +38,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 2:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " Looks like you got a zero because of a wrong conversion \n" +
                     " between an integer and a double. To get the correct result \n" +
@@ -53,6 +55,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 2:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
@@ -67,6 +70,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 2:\n" +
                     " METHOD: minutePerDayToHoursPerYearConverter\n" +
                     " You are almost done, but \n" +
                     " You need to round up the result to two decimals, not one\n" +
@@ -84,6 +88,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 3:\n" +
                     " METHOD: yearsBeforeMasteryCalculator\n" +
                     " You need to round up the result to a whole integer\n" +
                     " Check the task description again, and try the Math.round() method\n" +
@@ -95,6 +100,7 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 3:\n" +
                     " METHOD: yearsBeforeMasteryCalculator\n" +
                     " It looks like your method is rounding values like 1.3 up to 2\n" +
                     " According to the task, they need to be rounded down to 1 \n" +
@@ -106,22 +112,6 @@ class PracticePlannerTest {
                     "-------------------------------------------------------------------------\n"
             );
         }
-        // Test that gives some general feedback on other possible mistakes
-        if (PracticePlanner.yearsBeforeMasteryCalculator(45) != 37 && PracticePlanner.yearsBeforeMasteryCalculator(45)!=0) {
-            fail("\n" +
-                    "-------------------------------------------------------------------------\n" +
-                    " AUTO-FEEDBACK:\n" +
-                    " METHOD: yearsBeforeMasteryCalculator\n" +
-                    " There is probably a mistake in type conversions\n" +
-                    " Try to do the calculations in double type values first, \n" +
-                    " Round the result up and cast it to an integer in the end \n" +
-                    " to get the correct result. You see a casting example in \n" +
-                    " \"Introduction to Java Programming and Data Structures book\"\n" +
-                    "  chapter 2.15 casting \n" +
-                    "-------------------------------------------------------------------------\n"
-            );
-        }
-
         Assertions.assertEquals(37, PracticePlanner.yearsBeforeMasteryCalculator(45));
 
     }
@@ -134,21 +124,10 @@ class PracticePlannerTest {
             fail("\n" +
                     "-------------------------------------------------------------------------\n" +
                     " AUTO-FEEDBACK:\n" +
+                    " Step 4:\n" +
                     " METHOD: hoursOfPracticePerDayCalculator\n" +
                     " You need to round up the result to two decimals, try the to google\n" +
                     " Java Math.round() method to find an example in documentation\n" +
-                    "-------------------------------------------------------------------------\n"
-            );
-        }
-        // Giving some general advice if the calculation ir wrong
-        if (PracticePlanner.hoursOfPracticePerDayCalculator() != 1.37 && PracticePlanner.hoursOfPracticePerDayCalculator()!=0) {
-            fail("\n" +
-                    "-------------------------------------------------------------------------\n" +
-                    " AUTO-FEEDBACK:\n" +
-                    " METHOD: hoursOfPracticePerDayCalculator\n" +
-                    " You need to use the correct variable types in your calculations\n" +
-                    " Try to do all calculations in doubles and convert use Math.round()\n" +
-                    " Just before returning the result.\n" +
                     "-------------------------------------------------------------------------\n"
             );
         }
@@ -158,20 +137,10 @@ class PracticePlannerTest {
     @DisplayName("Checks if practiceTimeCalculator returns hours from a fixed point in time to now")
     @Test
     void practiceTimeCalculatorTest() {
-        // General feedback on any other possible wrong results
-        double expected = Math.round(((double) ((System.currentTimeMillis() - 1665378185977L) / 1000 / 60) / 60) * 100.0) / 100.0;
-        if (PracticePlanner.practiceTimeCalculator() != expected && PracticePlanner.practiceTimeCalculator()!=0) {
-            fail("\n" +
-                    "-------------------------------------------------------------------------\n" +
-                    " AUTO-FEEDBACK:\n" +
-                    " METHOD: practiceTimeCalculatorTest\n" +
-                    " Make sure you make all your calculations using long data type\n" +
-                    " Only during the last division from minutes to hours use double\n" +
-                    " To get the decimals from the division. Round up in the end. \n" +
-                    "-------------------------------------------------------------------------\n"
-            );
-            double expectedTime = Math.round(((double) ((System.currentTimeMillis() - 1665378185977L) / 1000 / 60) / 60) * 100.0) / 100.0;
+
+            double expectedTime = (double)((System.currentTimeMillis() - 1665378185977L)/1000/60)/60;
             Assertions.assertEquals(expectedTime, PracticePlanner.practiceTimeCalculator());
+
         }
     }
-}
+

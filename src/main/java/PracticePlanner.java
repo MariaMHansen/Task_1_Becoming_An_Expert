@@ -43,7 +43,7 @@ public class PracticePlanner {
      * Difficulty: 1
      */
     public static double minuteToHourConverter(int minutes){
-        // implement the method here
+        // Implement the code here ...
 
         return 0.0;
     }
@@ -122,11 +122,7 @@ public class PracticePlanner {
      * Difficulty: 4
      */
     public static double practiceTimeCalculator(){
-        long startTime = 1665378185977L;
-        long finishTime = System.currentTimeMillis();
-        long trainingTime = finishTime - startTime;
-        long minutes = trainingTime/1000/60;
-        double hours = (double)minutes/60;
-        return hours;
+        // Implement the code here ...
+        return 0.0;
     }
 }
